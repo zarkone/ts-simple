@@ -1,0 +1,16 @@
+
+* database
+
+** create script
+
+** migrations
+
+* User/login component
+
+** database connection, postgres
+** how to keep global state in react
+** cookies
+
+** register user
+
+** react router?

@@ -1,5 +1,7 @@
 import * as React from 'react';
 import MenuItem from './menu-item';
+import SignupForm from './forms/signup'
+
 
 interface Props {
     items: MenuItemProps[];
@@ -14,6 +16,9 @@ export default function Menu(props: Props) {
                     {items.map((o, i) => (
                         <MenuItem key={o.id} id={o.id} text={o.text} href={o.href} />
                     ))}
+                    <li>
+                        <SignupForm />
+                    </li>
                 </ul>
             </div>
         </nav>

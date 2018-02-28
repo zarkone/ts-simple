@@ -12,6 +12,7 @@ export function getListItems(): string[] {
     ];
 }
 
+
 export function getMenuItems(): MenuItemProps[] {
     // These menu items represent each <li>
     // in the top menu bar, typically static data
