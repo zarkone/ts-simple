@@ -26,6 +26,7 @@
     "@types/react-dom": "^16.0.3",
     "@types/tape": "^4.2.31",
     "awesome-typescript-loader": "^3.4.1",
+    "nodemon": "^1.17.1",
     "prettier": "1.10.2",
     "source-map-loader": "^0.2.3",
     "tape": "^4.8.0",
