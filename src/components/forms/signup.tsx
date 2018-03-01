@@ -26,16 +26,22 @@ export default class SignupForm extends React.Component<{}, SignupFormState> {
         let { email, password } = this.state;
 
         return (
-            <form>
-                <input type="text"
-                    onChange={(e) => { this.setState({ email: e.target.value }); }}
+            <form className="form-inline">
+                <div className="form-group">
+                    <input type="text"
+                        className="form-control"
+                        onChange={(e) => { this.setState({ email: e.target.value }); }}
 
-                    placeholder="Email"
-                    defaultValue={email ? email : ""}
-                />
-                <input type="password"
-                    onChange={(e) => { this.setState({ password: e.target.value }); }}
-                    defaultValue={password ? password : ""} />
+                        placeholder="Email"
+                        defaultValue={email ? email : ""}
+                    />
+                </div>
+                <div className="form-group">
+                    <input type="password"
+                        className="form-control"
+                        onChange={(e) => { this.setState({ password: e.target.value }); }}
+                        defaultValue={password ? password : ""} />
+                </div>
                 <Button
                     onClick={(_) => { this.handleRegister(this.state); }}
                     type="primary"

@@ -29,8 +29,7 @@ export default class App extends React.Component<AppProps, AppState> {
         const { menuItems } = this.props;
         console.log("RELOADED.", new Date());
         return (
-            <div>
-                <Menu items={menuItems} />
+            <div>                <Menu items={menuItems} />
                 <Main />
             </div>
         );
